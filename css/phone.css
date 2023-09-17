@@ -1,0 +1,130 @@
+@media (max-width: 600px) {
+
+    header{
+     justify-content: flex-start;
+     background-color: transparent;
+}
+.logo{
+    background-color:rgba(0,0,0,0.4);
+    padding: 12px;
+    border-radius: 50%;
+
+}
+.logo img{ 
+    height: 45px;  
+}
+
+ul{
+    display:none;
+}
+.service{
+padding-bottom: 20px;
+}
+.box-container{
+    padding: 0px 15px;
+    flex-wrap: wrap;
+  
+}
+.box{
+    background-color: transparent;
+  border: 8px solid grey;
+    width: 70vw;
+    height:max-content;
+    margin: 13px 0px;
+    border-radius:20rem  20rem 18px  18px  ;
+    /* padding: 19px 12px; */
+    padding: 0px 0px; 
+    padding-bottom: 22px;
+    overflow: hidden;
+}
+.box img{
+  display: block;
+    margin:0px;
+    padding: 0px;
+    border-radius: 5px;
+    height: 60%;
+    width: 100%;
+}
+
+
+
+
+#clients{
+    margin: 12px 2px;
+
+}
+.client-item{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 100%;
+    margin: 10px;
+}
+.client-item img{
+    padding: 30px;
+    height: 55px;
+    border-radius: 10px;
+   
+}
+
+
+
+form{
+
+    margin: 30px 0px; 
+    margin-bottom: 0px; 
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    display: none;
+}
+
+
+form input,textarea{
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-style:hidden;
+    outline: none;
+ margin: 16px 0px;
+    padding:18px 25px;
+}
+
+form textarea{
+    font-size: 18px;
+    font-weight: 500;
+    padding:18px 25px;
+  height: 80px;
+}
+
+
+.h-primary{
+    font-size :12vw;
+    margin: 0px;
+    color: chartreuse;
+}
+.h-primary2{
+    font-size: 12vw;
+    padding: 8px;
+}
+.h-secondary{
+    font-size:2.2rem;
+margin: 0.7rem;
+}
+.sec-margin{
+    margin-top: 33px;
+    margin-bottom: 15px;
+}
+.para{
+font-weight: 700;
+    padding: 0px 12px;
+    font-size: 1rem;
+    
+}
+
+
+
+
+
+}
