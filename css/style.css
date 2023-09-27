@@ -2,168 +2,204 @@
     margin: 0;
     padding: 0;
 }
-/* css variables */
-:root{
-
+body{
+    background:linear-gradient(to top, rgb(154, 212, 235),white);
+} 
+/* navbar styling */
+#nav{
+    font-family: 'Rubik', sans-serif;
+    background:url('../background/backi4.jpg') no-repeat center center/cover;
+     color: white;
 }
-/* naviagtion bar */
-#navbar{
+
+header{
+    /* position: relative; */
+    padding: 0.8rem;
     display: flex;
     align-items: center;
-    position: relative;
-    top: 0px;
+    justify-content: space-between;
+    background-color: rgba(4, 17, 10, 0.5);
+}
 
+.logo{
    
 }
-/* naviagtion bar : logo and image styling*/
-#logo{
-margin: 5px 4px;
-background-color: black;
+.logo img{
+    height: 30px;
+    border-radius: 50%;
 }
-#logo img{
-    margin:0px 1px;
-  height: 30px;
-  border-radius: 50%;  
-}
-/* naviagtion bar :list styling */
-
-#navbar ul{
+ul{
     display: flex;
-    font-family: 'Rubik', sans-serif;
 }
-
-#navbar::before{ /*use for background  .... */
-    content: "";
-    position: absolute;
-    background-color:black;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-}
-#navbar ul li{
+.list-item{
     list-style: none;
-    font-size: 1.3rem;
-/*     
-    padding: 3px 16px;
-    background-color: palevioletred; */
+    font-size: 1.4rem;
+    
 }
-#navbar ul li a{
+.list-item a{
     color: white;
-   display: block;
+    padding: 1px 15px;
     border-radius: 20px;
     text-decoration: none;
-    padding: 3px 16px;
 }
-
-#navbar ul li a:hover{
-    color: black;
-  background-color: white;
+.list-item a:hover{
+   background-color: white;
+   cursor: pointer;
+   color:blue;
 }
-
 
 /* home section */
-#home{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 2px;
-height:180px;
- align-items: center;
- justify-content: center;
- margin-bottom: 137px;
 
-   
+.home{
+ padding: 50px 4px;
+ height: 312px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;    
 }
-/* .....for background.... */
-#home::before{ 
-    content: "";
-    position: absolute;
-    background:url('../background/backi4.jpg') no-repeat center center/cover;
-    height:90% ;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.894;
-}
-#home h1{
-    color: white;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-}
-#home p{
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Rubik', sans-serif;
-}
-/* services section */
- .ourservices{
-    /* margin-top: 100px ; */
-    text-align: center;
-} 
-#services{
-    margin: 30px;
+.text{
     display: flex;
+    padding: 18px 10px;
+    flex-direction: column;
+    gap:0.4px;
+    justify-content: center;
+    align-items: center;
+ 
 }
-#services .box{
-    border: 2px solid black;
-    margin: 3px;
-    padding: 10px;  
-    background-color: bisque; 
-    border-radius: 15px;
+.para{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 3px;
+    font-size: 1.0rem;
+    
 }
-#services .box img{
-    height: 160px;
+
+/* service section */
+
+.box-container{
+    display: flex;
+    margin: 10px 25px;
+    /* flex-wrap: wrap; */
+ 
+}
+.box{
+    border-radius: 20px;
+    margin: 13px 5px;
+border: 2px solid red;
+padding: 8px 12px;
+
+}
+.box img{
     display: block;
     margin: auto;
-    border-radius: 15px;
+    padding: 6px;
+    border-radius: 20px;
+    height: 130px;
 }
-#services .box p{
-    font-family: 'Rubik', sans-serif;
-}
-
 /* clients section */
-#client-section{
-height: 344px;
-}
-#client-section::before{
-
-}
-#clients{
+.clients-service{
+    background:url('../background/backi2.jpg') center center/cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.client-item{
-    padding: 20px;
+#clients{
+    margin: 46px 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-#clients img{
-    height: 70px;
+.client-item img{
+    padding: 31px;
+    height: 47px;
+    border-radius: 10px;
+}
+
+/* contact-section */
+.contactus{
+  
+  padding-bottom: 75px;
+background: url('../contactus.jpg') center center/cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+form{
+    margin: 60px 50px;
+    margin-bottom: 0px;
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input,textarea{
+    border-radius: 6px;
+    border-style:hidden;
+    width: 100%;
+ margin: 7px;
+    padding:12px 30px;
+}
+form textarea{
+    padding: 5px 30px;
+  height: 80px;
+}
+footer{
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: rgb(90, 10, 10);
+    padding:15px 10px;
+  
 }
 /* utility classes */
 .h-primary{
-    font-size: 5.8em;
-    padding: 12px;
     font-family: 'Rubik', sans-serif;
+    font-size :5.3rem;
+    text-align: center;
+    margin: 18px;
+    color: white;
+}
+.h-primary2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(58, 61, 211);
 }
 .h-secondary{
-    font-size: 2.0rem;
-    padding: 12px;
     font-family: 'Rubik', sans-serif;
+    font-size:2.0rem;
+    text-align: center;
+}
+.sec-margin{
+    margin-top: 33px
 }
 .btn{
-    padding: 5px 10px;
+    padding: 12px 20px;
     font-size: 1.2rem;
-    margin: 15px;
-    border: 2px solid white;
+    margin: 20px;
+    margin-top: 35px;
+    border: 3px solid white;
     color: white;
     background-color: grey;
-    border-radius: 30px;
+    border-radius: 16px;
+    font-weight: 600;
     cursor: pointer;
 }
- .center{
-text-align: center;
-} 
+.para1{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 1.0rem;
+    color:white;
+    font-weight: 400;
+    padding: 5px 3px;
+}
+.para{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 3px;
+    font-size: 1.0rem;
+    
+}
